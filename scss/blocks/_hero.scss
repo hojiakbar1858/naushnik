@@ -1,0 +1,38 @@
+
+.hero {
+  background-color: #141414;
+  padding: 128px 0px 158px;
+  color: #fff;
+}
+
+.hero__text {
+  // margin: 0px;
+  @include fonts;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.title{
+  // margin: 0px;
+  @include fonts;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  width: 396px;
+  text-transform: uppercase;
+
+}
+.title__text{
+  // margin: 0px;
+  @include fonts;
+  width: 349px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.75;
+  mix-blend-mode: normal; 
+}

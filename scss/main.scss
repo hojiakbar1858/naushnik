@@ -1,9 +1,7 @@
+@charset "UTF-8";
+@import "generals";
 @import "container";
 @import "normalize";
+@import "fonts";
 @import "mixins";
 @import "blocks/blocks";
-
-*{
-  margin: 0px;
-  padding: 0px;
-}
