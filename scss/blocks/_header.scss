@@ -1,0 +1,24 @@
+.container {
+  @include flex-box;
+}
+
+.header__logo {
+  text-decoration: none;
+
+  .header__logo__link {
+    color: black;
+  }
+}
+
+.category {
+
+  @include flex-box;
+
+  
+  width: 200px;
+  text-decoration: none;
+
+  .link {
+    color: brown;
+  }
+}
