@@ -1,23 +1,22 @@
-.intro{
+.hero{
+  width: 100%;
   display: flex;
-}
-
-.hero {
   background-color: #141414;
-  padding: 128px 0px 158px;
   color: #fff;
-  padding-bottom: 200px;
+  z-index: 12;
+  height: 630px;
+  align-items: center;
+}
+.intro{
+  position: relative;
   z-index: 12;
 }
-.bgimg{
-  background-image: url(../../img/airpods.png);
-  background-repeat: no-repeat;
+.hero-img{
   position: absolute;
-  z-index: 13;
-  width: 708.8px;
-  height: 886px;
-  top: -30px;
-  left: 47%;
+  z-index: 1;
+  top: -250px;
+  right: 0%;
+  margin: 0px auto;
 }
 
 .hero__text {
@@ -53,7 +52,7 @@
   line-height: 25px;
   opacity: 0.75;
   mix-blend-mode: normal;
-  margin-bottom: 55px; 
+  margin-bottom: 50px;
 }
 
 .btn{
@@ -64,5 +63,10 @@
   line-height: 18px;
   text-decoration: none;
 }
+@media only screen and (max-width: 1100px){
+.hero{
+  width: 100%;
+  background-color: #141414;
+}
 
-@media only screen and (max-width: 768px)
+}

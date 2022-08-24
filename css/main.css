@@ -1,5 +1,5 @@
 .container {
-  width: 1260px;
+  width: 100%;
   margin: 0px auto;
   padding: 0px 30px;
 }
@@ -223,6 +223,7 @@ body {
   flex-direction: column;
   font-family: "Manrope";
   font-style: normal;
+  all: inherit;
 }
 
 img {
@@ -283,34 +284,59 @@ img {
   padding-bottom: 107px;
 }
 
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0px;
+  overflow: hidden;
+  border: 0px;
+  clip: rect(0, 0, 0, 0);
+}
+
 header {
+  width: 100%;
   background-color: #141414;
   z-index: 50;
   position: relative;
 }
 
 .header__category {
-  border-bottom: 1px solid rgba(226, 226, 226, 0.5);
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
   margin: 0px;
   padding: 30px 0px;
 }
 
-.head__ul {
-  width: 50%;
+.menu {
+  display: none;
+  color: #fff;
+  width: 16px;
+}
+.menu__ul {
+  height: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__ul--li {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.category__head__ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-
-.head__ul__li {
+.category__head__ul__li {
   margin: 0px 15px;
 }
-
-.li_link {
+.category__head__ul__li--link {
   font-family: "Manrope";
   font-style: normal;
   text-decoration: none;
@@ -320,32 +346,150 @@ header {
   font-size: 13px;
   line-height: 25px;
 }
-
-.li_link:hover {
+.category__head__ul__li__li_link:hover {
   color: #D87D4A;
 }
 
-.intro {
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: #141414;
+    z-index: 50;
+    position: relative;
+  }
+  .header__category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .header__category--div {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: block;
+    color: #fff;
+    width: 16px;
+    margin-right: 40px;
+  }
+  .menu__link__ul {
+    height: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu__link__ul--li {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+  .category__head__ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .category__head__ul__li {
+    margin: 0px 15px;
+  }
+  .category__head__ul__li--link {
+    display: none;
+    font-family: "Manrope";
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    list-style: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .category__head__ul__li__li_link:hover {
+    color: #D87D4A;
+  }
+  .korzinka__link--img {
+    display: block;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    background-color: #141414;
+    z-index: 50;
+    position: relative;
+  }
+  .header__category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .header__category--div {
+    display: flex;
+    align-items: center;
+  }
+  .header__category--div .menu {
+    display: block;
+    color: #fff;
+    width: 16px;
+  }
+  .header__category--div .menu__link__ul {
+    height: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__category--div .menu__link__ul--li {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+  .category__head__ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .category__head__ul__li {
+    margin: 0px 15px;
+  }
+  .category__head__ul__li--link {
+    display: none;
+    font-family: "Manrope";
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    list-style: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .category__head__ul__li__li_link:hover {
+    color: #D87D4A;
+  }
+  .korzinka__link--img {
+    display: block;
+  }
+}
+.hero {
+  width: 100%;
   display: flex;
+  background-color: #141414;
+  color: #fff;
+  z-index: 12;
+  height: 630px;
+  align-items: center;
 }
 
-.hero {
-  background-color: #141414;
-  padding: 128px 0px 158px;
-  color: #fff;
-  padding-bottom: 200px;
+.intro {
+  position: relative;
   z-index: 12;
 }
 
-.bgimg {
-  background-image: url(../../img/airpods.png);
-  background-repeat: no-repeat;
+.hero-img {
   position: absolute;
-  z-index: 13;
-  width: 708.8px;
-  height: 886px;
-  top: -30px;
-  left: 47%;
+  z-index: 1;
+  top: -250px;
+  right: 0%;
+  margin: 0px auto;
 }
 
 .hero__text {
@@ -383,7 +527,7 @@ header {
   line-height: 25px;
   opacity: 0.75;
   mix-blend-mode: normal;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -395,6 +539,12 @@ header {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  .hero {
+    width: 100%;
+    background-color: #141414;
+  }
+}
 .shop {
   position: relative;
   z-index: 10;

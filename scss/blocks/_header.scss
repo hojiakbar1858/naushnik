@@ -1,45 +1,219 @@
-
 header {
+  width: 100%;
   background-color: #141414;
   z-index: 50;
   position: relative;
 }
-.menu{
-  position: absolute;
-  background-color: #fff;
-  width: 10px;
-  height: 10px;
-  padding: 10px;
-}
+
 
 .header__category {
-  border-bottom: 1px solid rgb(226, 226, 226, 0.5);
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  @include flex-box;
   margin: 0px;
   padding: 30px 0px;
 }
-.head__ul {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-.head__ul__li {
-  margin: 0px 15px;
-}
-.li_link {
-  @include fonts;
-  text-decoration: none;
-  color: rgb(226, 226, 226);
-  list-style: none;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 25px;
+
+.menu {
+  display: none;
+  color: #fff;
+  width: 16px;
+
+  &__ul {
+    height: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--li {
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+    }
+  }
 }
 
-.li_link:hover{
-  color: #D87D4A;
+.category {
+  &__head__ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    &__li {
+      margin: 0px 15px;
+
+      &--link {
+        @include fonts;
+        text-decoration: none;
+        color: rgb(226, 226, 226);
+        list-style: none;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 25px;
+      }
+
+      &__li_link:hover {
+        color: #D87D4A;
+      }
+    }
+
+  }
+
 }
 
-@media only screen and (max-width: 768px)
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: #141414;
+    z-index: 50;
+    position: relative;
+  }
+
+
+  .header__category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &--div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .menu {
+    display: block;
+    color: #fff;
+    width: 16px;
+    margin-right: 40px;
+
+    &__link__ul {
+      height: 15px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &--li {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+    }
+  }
+
+
+  .category {
+    &__head__ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      &__li {
+        margin: 0px 15px;
+
+        &--link {
+          display: none;
+          @include fonts;
+          text-decoration: none;
+          color: rgb(226, 226, 226);
+          list-style: none;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 25px;
+        }
+
+        &__li_link:hover {
+          color: #D87D4A;
+        }
+      }
+
+    }
+
+  }
+
+  .korzinka__link {
+    &--img {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    background-color: #141414;
+    z-index: 50;
+    position: relative;
+  }
+
+
+  .header__category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &--div {
+      display: flex;
+      align-items: center;
+
+      .menu {
+        display: block;
+        color: #fff;
+        width: 16px;
+
+        &__link__ul {
+          height: 15px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          &--li {
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  .category {
+    &__head__ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      &__li {
+        margin: 0px 15px;
+
+        &--link {
+          display: none;
+          @include fonts;
+          text-decoration: none;
+          color: rgb(226, 226, 226);
+          list-style: none;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 25px;
+        }
+
+        &__li_link:hover {
+          color: #D87D4A;
+        }
+      }
+
+    }
+
+  }
+
+  .korzinka__link {
+    &--img {
+      display: block;
+    }
+  }
+}
