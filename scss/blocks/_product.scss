@@ -1,0 +1,150 @@
+.product-ul {
+  list-style: none;
+}
+
+.product-li1 {
+  text-decoration: none;
+  background-color: #D87D4A;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.ZX9-img {
+  position: absolute;
+  z-index: 13;
+  width: 844px;
+  height: 844;
+  top: -50px;
+  left: 0px;
+}
+
+.bass-audio {
+  background-image: url(../../img/bigsound.png);
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 410.23px;
+  height: 493px;
+  z-index: 14;
+  top: 78px;
+  left: 160px;
+}
+
+
+.speak {
+  padding-bottom: 120px;
+  padding-left: 780px;
+}
+
+.speak-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 133px;
+  padding-bottom: 24px;
+  width: 261px;
+}
+
+.speak-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  width: 349px;
+  opacity: 0.75;
+  padding-bottom: 55px;
+}
+
+.speak-link {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 15px 31px;
+}
+
+.speak-link:hover {
+  background-color: #4C4C4C;
+}
+
+
+.product-li2 {
+  text-decoration: none;
+  display: flex;
+  background-image: url(../../img/Bitmap.png);
+  border-radius: 10px;
+  left: 75px;
+  margin-bottom: 50px;
+}
+
+.product-div {
+  padding-top: 100px;
+  padding-left: 116px;
+  padding-bottom: 100px;
+}
+
+.speaker-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.product-see-link {
+  text-decoration: none;
+  padding: 15px 31px;
+  border: 1px solid #000;
+  color: #000;
+}
+.product-see-link:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+
+.product-li3 {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 150px; 
+}
+
+.earphones-img {
+  border-radius: 10px;
+}
+
+.earphones {
+  padding-right: 280px;
+  background-color:#F1F1F1;
+  border-radius: 10px;
+  padding-left: 90px;
+}
+
+.earphones-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
