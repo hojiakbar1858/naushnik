@@ -1,98 +1,62 @@
-.shop {
-  position: relative;
-  z-index: 10;
-  margin-bottom: 168px;
-}
-
-.shop-ul {
+.grid-container {
   list-style: none;
-  @include flex-box;
-  margin-top: 200px;
-}
-
-.shop-li {
-  background: #F1F1F1;
-  border-radius: 8px;
-  position: relative;
-}
-
-.shop-link {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.shop-img {
-  position: absolute;
-  z-index: 20;
-  top: -80px;
-}
-
-.smoke {
-  position: absolute;
-  z-index: 11;
-  top: 30px;
-  background: #000000;
-  filter: blur(43.4925px);
-}
-
-.li-text1 {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 1.28571px;
-  text-transform: uppercase;
-  color: #000000;
-  padding: 116px 108px 15px;
-
-}
-
-.li-text2 {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 1.28571px;
-  text-transform: uppercase;
-  color: #000000;
-  padding: 116px 124px 15px;
-
-}
-
-.li-text3 {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 1.28571px;
-  text-transform: uppercase;
-  color: #000000;
-  padding: 116px 116px 15px;
-
-}
-
-.shop__div {
-  display: flex;
-  width: 59px;
+  padding-top: 200px;
+  display: grid;
   justify-content: space-between;
-  padding-bottom: 30px;
-}
+  grid-template-columns: auto auto auto;
+  position: relative;
 
-.shop__text {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-  opacity: 0.5;
-  margin-right: 14px;
+  &__li {
+    margin-bottom: 168px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    width: 350px;
+    
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+
+      &--img {
+        position: absolute;
+        bottom: 53%;
+      }
+
+      &--smoke {
+        position: absolute;
+        bottom: 48%;
+      }
+
+      &--li-text1 {
+        padding-top: 116px;
+        margin-bottom: 15px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000;
+      }
+
+      &__div {
+        display: flex;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: 30px;
+        &--shoptext{
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 18px;
+          opacity: 0.5;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

@@ -1,35 +1,17 @@
-header {
-  width: 100%;
-  background-color: #141414;
-  z-index: 50;
-  position: relative;
-}
+.header {
+  background-color: #121212;
+  padding-top: 35px;
+  &__category {
+    @include flex-box;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 
+    &--div {
+      @include flex-box;
 
-.header__category {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0px;
-  padding: 30px 0px;
-}
-
-.menu {
-  display: none;
-  color: #fff;
-  width: 16px;
-
-  &__ul {
-    height: 15px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &--li {
-      width: 100%;
-      height: 3px;
-      background-color: #fff;
+      .menu {
+        display: none;
+      }
     }
   }
 }
@@ -37,183 +19,112 @@ header {
 .category {
   &__head__ul {
     display: flex;
-    justify-content: space-around;
     list-style: none;
 
     &__li {
-      margin: 0px 15px;
-
       &--link {
-        @include fonts;
         text-decoration: none;
-        color: rgb(226, 226, 226);
-        list-style: none;
+        margin: 0px 30px;
+        color: #fff;
+        font-family: 'Manrope';
+        font-style: normal;
         font-weight: 700;
         font-size: 13px;
         line-height: 25px;
-      }
 
-      &__li_link:hover {
-        color: #D87D4A;
-      }
-    }
-
-  }
-
-}
-
-
-@media only screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    background-color: #141414;
-    z-index: 50;
-    position: relative;
-  }
-
-
-  .header__category {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    &--div {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .menu {
-    display: block;
-    color: #fff;
-    width: 16px;
-    margin-right: 40px;
-
-    &__link__ul {
-      height: 15px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      &--li {
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-      }
-    }
-  }
-
-
-  .category {
-    &__head__ul {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
-
-      &__li {
-        margin: 0px 15px;
-
-        &--link {
-          display: none;
-          @include fonts;
-          text-decoration: none;
-          color: rgb(226, 226, 226);
-          list-style: none;
-          font-weight: 700;
-          font-size: 13px;
-          line-height: 25px;
-        }
-
-        &__li_link:hover {
+        &:hover {
           color: #D87D4A;
         }
       }
 
     }
-
-  }
-
-  .korzinka__link {
-    &--img {
-      display: block;
-    }
   }
 }
+// ================================== Responsiv 768 ============================== //
 
-@media only screen and (max-width: 375px) {
-  header {
-    width: 100%;
-    background-color: #141414;
-    z-index: 50;
-    position: relative;
-  }
+@media only screen and (max-width: 768px) {
+  .header {
+    background-color: #121212;
+    padding-top: 30px;
+    
+    &__category {
+      border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+      padding-bottom: 30px;
 
+      @include flex-box;
 
-  .header__category {
-    display: flex;
-    align-items: center;
-    width: 100%;
+      &--div {
+        @include flex-box;
 
-    &--div {
-      display: flex;
-      align-items: center;
+        .menu {
+          display: block;
 
-      .menu {
-        display: block;
-        color: #fff;
-        width: 16px;
+          margin-right: 20%;
 
-        &__link__ul {
-          height: 15px;
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          &__link__ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 15px;
 
-          &--li {
-            width: 100%;
-            height: 3px;
-            background-color: #fff;
+            &--li {
+              text-decoration: none;
+              background-color: #fff;
+              width: 16px;
+              height: 3px;
+              border-radius: 10px;
+            }
           }
         }
       }
     }
   }
 
-
   .category {
-    &__head__ul {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
+    display: none;
+  }
+}
+// ================================== Responsiv 375 ============================== //
+@media only screen and (max-width: 375px) {
+  .header {
+    background-color: #121212;
+    padding-top: 30px;
+    
+    &__category {
+      border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+      padding-bottom: 30px;
+      @include flex-box;
 
-      &__li {
-        margin: 0px 15px;
+      &--div {
+        @include flex-box;
+        width: 50%;
+        
 
-        &--link {
-          display: none;
-          @include fonts;
-          text-decoration: none;
-          color: rgb(226, 226, 226);
-          list-style: none;
-          font-weight: 700;
-          font-size: 13px;
-          line-height: 25px;
-        }
+        .menu {
+          display: block;
 
-        &__li_link:hover {
-          color: #D87D4A;
+          &__link__ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 15px;
+
+            &--li {
+              text-decoration: none;
+              background-color: #fff;
+              width: 16px;
+              height: 3px;
+              border-radius: 10px;
+            }
+          }
         }
       }
-
     }
-
   }
 
-  .korzinka__link {
-    &--img {
-      display: block;
-    }
+  .category {
+    display: none;
   }
 }

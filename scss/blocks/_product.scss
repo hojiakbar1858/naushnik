@@ -1,150 +1,203 @@
-.product-ul {
-  list-style: none;
+.product {
+  padding-bottom: 150px;
 }
 
-.product-li1 {
-  text-decoration: none;
+.ZX9speaker {
   background-color: #D87D4A;
+  height: 560px;
   border-radius: 8px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.ZX9-img {
-  position: absolute;
-  z-index: 13;
-  width: 844px;
-  height: 844;
-  top: -50px;
-  left: 0px;
-}
-
-.bass-audio {
-  background-image: url(../../img/bigsound.png);
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../../img/circles.png);
+  background-size: contain;
+  background-position: 0px 0px;
   content: "";
   background-repeat: no-repeat;
-  position: absolute;
-  width: 410.23px;
-  height: 493px;
-  z-index: 14;
-  top: 78px;
-  left: 160px;
+  position: relative;
+  margin-bottom: 50px;
+
+  &--img {
+    width: 410px;
+    height: 493px;
+    position: absolute;
+
+  }
+
+  &__wrapper {
+    &--title {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 58px;
+      color: #fff;
+      width: 260px;
+      padding-top: 133px;
+      margin-bottom: 24px;
+    }
+
+    .zxtext {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color: #fff;
+      opacity: 0.75;
+      width: 349px;
+      margin-bottom: 55px;
+    }
+
+    .btn {
+      background-color: #000;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #4C4C4C;
+      }
+    }
+  }
 }
 
-
-.speak {
-  padding-bottom: 120px;
-  padding-left: 780px;
-}
-
-.speak-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 58px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding-top: 133px;
-  padding-bottom: 24px;
-  width: 261px;
-}
-
-.speak-text {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: #FFFFFF;
-  width: 349px;
-  opacity: 0.75;
-  padding-bottom: 55px;
-}
-
-.speak-link {
-  text-decoration: none;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding: 15px 31px;
-}
-
-.speak-link:hover {
-  background-color: #4C4C4C;
-}
-
-
-.product-li2 {
-  text-decoration: none;
-  display: flex;
+.ZX7speaker {
   background-image: url(../../img/Bitmap.png);
-  border-radius: 10px;
-  left: 75px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+  padding-left: 50px;
+  background-size: contain;
   margin-bottom: 50px;
+
+  &__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 110px;
+    margin-bottom: 50px;
+  }
+
+  .submit {
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 15px 31px;
+    border: 1px solid #000;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
 }
 
-.product-div {
-  padding-top: 100px;
-  padding-left: 116px;
-  padding-bottom: 100px;
+.product__ul {
+  list-style: none;
+  @include flex-box;
+
+  &__li {
+    border-radius: 8px;
+
+    &--img {
+      border-radius: 8px;
+    }
+
+    &__div {
+      background-color: #f1f1f1;
+
+      &--title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
+      .submit {
+        text-decoration: none;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000;
+        padding: 15px 31px;
+        border: 1px solid #000;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+
+    }
+  }
 }
 
-.speaker-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
+.YX1__ul {
+  list-style: none;
+  @include flex-box;
 
-.product-see-link {
-  text-decoration: none;
-  padding: 15px 31px;
-  border: 1px solid #000;
-  color: #000;
-}
-.product-see-link:hover{
-  background-color: #000;
-  color: #fff;
-}
+  &__li {
+    text-decoration: none;
 
+    &--img {
+      border-radius: 8px;
+    }
+    &__div{
+      text-decoration: none;
+      background-color: #f1f1f1;
+      padding-top: 100px;
+      padding-right: 200px;
+      padding-bottom: 116px;
+      padding-left: 95px;
+      border-radius: 8px;
+      &--title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 55px;
+      }
+      
+      &--link {
+        text-decoration: none;
+        padding: 15px 31px;
+        border: 1px solid #000;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
 
-.product-li3 {
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between; 
-  margin-bottom: 150px; 
-}
+  }
 
-.earphones-img {
-  border-radius: 10px;
-}
-
-.earphones {
-  padding-right: 280px;
-  background-color:#F1F1F1;
-  border-radius: 10px;
-  padding-left: 90px;
-}
-
-.earphones-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding-top: 80px;
-  margin-bottom: 50px;
 }
